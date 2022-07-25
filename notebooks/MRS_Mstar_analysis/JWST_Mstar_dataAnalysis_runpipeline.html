@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
   <link href="../../genindex.html" rel="index" title="Index"/>
   <link href="../../search.html" rel="search" title="Search"/>
   <link href="JWST_Mstar_dataAnalysis_PointSourceDetectorBasedExtraction.html" rel="next" title="MRS Detector Based Extraction"/>
-  <link href="../specviz_notebookGUI_interaction/specviz_notebook_gui_interaction_redshift.html" rel="prev" title="Specviz Simple Demo"/>
+  <link href="../cube_fitting/cube_fitting.html" rel="prev" title="Spectral Cube Modeling"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <meta content="None" name="docsearch:language"/>
   <!-- Google Analytics -->
@@ -177,6 +177,11 @@ const thebe_selector_output = ".output, .cell_output"
           <li class="toctree-l1">
            <a class="reference internal" href="../specviz_notebookGUI_interaction/specviz_notebook_gui_interaction_redshift.html">
             Specviz Simple Demo
+           </a>
+          </li>
+          <li class="toctree-l1">
+           <a class="reference internal" href="../cube_fitting/cube_fitting.html">
+            IFU Cube Line Maps
            </a>
           </li>
          </ul>
@@ -290,6 +295,11 @@ const thebe_selector_output = ".output, .cell_output"
           <li class="toctree-l1">
            <a class="reference internal" href="../mos-spectroscopy/MOSspec_sv06_revised.html">
             MOS Spectroscopy of Extragalactic Field
+           </a>
+          </li>
+          <li class="toctree-l1">
+           <a class="reference internal" href="../transit_spectroscopy_notebook/Exoplanet_Transmission_Spectra_JWST.html">
+            BOTS Time Series Observations
            </a>
           </li>
          </ul>
@@ -941,31 +951,7 @@ W Per from Kraemer et al. (2002) and Sloan et al. (2003) to cover the MRS spectr
             <div class="cell_output docutils container">
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq4_MIRIFUSHORT_12LONGexp1.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq3_MIRIFUSHORT_12LONGexp1.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq2_MIRIFUSHORT_12LONGexp1.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq1_MIRIFUSHORT_12LONGexp1.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>20210413_123047_mirisim/det_images/det_image_seq3_MIRIFUSHORT_12MEDIUMexp1.fits
+               <pre><span></span>20210413_123047_mirisim/det_images/det_image_seq4_MIRIFUSHORT_12MEDIUMexp1.fits
 </pre>
               </div>
              </div>
@@ -977,19 +963,37 @@ W Per from Kraemer et al. (2002) and Sloan et al. (2003) to cover the MRS spectr
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
+               <pre><span></span>20210413_123047_mirisim/det_images/det_image_seq3_MIRIFUSHORT_12MEDIUMexp1.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
                <pre><span></span>20210413_123047_mirisim/det_images/det_image_seq1_MIRIFUSHORT_12MEDIUMexp1.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>20210413_123047_mirisim/det_images/det_image_seq4_MIRIFUSHORT_12MEDIUMexp1.fits
+               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq3_MIRIFUSHORT_12LONGexp1.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq2_MIRIFUSHORT_12SHORTexp1.fits
+               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq4_MIRIFUSHORT_12LONGexp1.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq1_MIRIFUSHORT_12LONGexp1.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq2_MIRIFUSHORT_12LONGexp1.fits
 </pre>
               </div>
              </div>
@@ -1001,49 +1005,31 @@ W Per from Kraemer et al. (2002) and Sloan et al. (2003) to cover the MRS spectr
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq1_MIRIFUSHORT_12SHORTexp1.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
                <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq3_MIRIFUSHORT_12SHORTexp1.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq1_MIRIFULONG_34LONGexp1.fits
+               <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq2_MIRIFUSHORT_12SHORTexp1.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq3_MIRIFULONG_34LONGexp1.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq2_MIRIFULONG_34LONGexp1.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq4_MIRIFULONG_34LONGexp1.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>20210413_123047_mirisim/det_images/det_image_seq3_MIRIFULONG_34MEDIUMexp1.fits
+               <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq1_MIRIFUSHORT_12SHORTexp1.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
                <pre><span></span>20210413_123047_mirisim/det_images/det_image_seq2_MIRIFULONG_34MEDIUMexp1.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>20210413_123047_mirisim/det_images/det_image_seq3_MIRIFULONG_34MEDIUMexp1.fits
 </pre>
               </div>
              </div>
@@ -1061,7 +1047,31 @@ W Per from Kraemer et al. (2002) and Sloan et al. (2003) to cover the MRS spectr
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq2_MIRIFULONG_34SHORTexp1.fits
+               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq3_MIRIFULONG_34LONGexp1.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq1_MIRIFULONG_34LONGexp1.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq2_MIRIFULONG_34LONGexp1.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>20210413_125354_mirisim/det_images/det_image_seq4_MIRIFULONG_34LONGexp1.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq1_MIRIFULONG_34SHORTexp1.fits
 </pre>
               </div>
              </div>
@@ -1079,7 +1089,7 @@ W Per from Kraemer et al. (2002) and Sloan et al. (2003) to cover the MRS spectr
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq1_MIRIFULONG_34SHORTexp1.fits
+               <pre><span></span>20210413_120546_mirisim/det_images/det_image_seq2_MIRIFULONG_34SHORTexp1.fits
 </pre>
               </div>
              </div>
@@ -1134,49 +1144,7 @@ W Per from Kraemer et al. (2002) and Sloan et al. (2003) to cover the MRS spectr
             <div class="cell_output docutils container">
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>det_image_seq3_MIRIFUSHORT_12SHORTexp1120546_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>det_image_seq1_MIRIFUSHORT_12MEDIUMexp1123047_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>det_image_seq2_MIRIFUSHORT_12SHORTexp1120546_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
                <pre><span></span>det_image_seq2_MIRIFUSHORT_12LONGexp1125354_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>det_image_seq4_MIRIFUSHORT_12SHORTexp1120546_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>det_image_seq1_MIRIFUSHORT_12SHORTexp1120546_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>det_image_seq3_MIRIFUSHORT_12MEDIUMexp1123047_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>det_image_seq4_MIRIFUSHORT_12MEDIUMexp1123047_rate.fits
 </pre>
               </div>
              </div>
@@ -1189,13 +1157,25 @@ this one will have the level 2b cube built
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
+               <pre><span></span>det_image_seq4_MIRIFUSHORT_12MEDIUMexp1123047_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
                <pre><span></span>det_image_seq4_MIRIFUSHORT_12LONGexp1125354_rate.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>det_image_seq2_MIRIFUSHORT_12MEDIUMexp1123047_rate.fits
+               <pre><span></span>det_image_seq2_MIRIFUSHORT_12SHORTexp1120546_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>det_image_seq1_MIRIFUSHORT_12SHORTexp1120546_rate.fits
 </pre>
               </div>
              </div>
@@ -1207,14 +1187,31 @@ this one will have the level 2b cube built
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>det_image_seq1_MIRIFULONG_34LONGexp1125354_rate.fits
+               <pre><span></span>det_image_seq4_MIRIFUSHORT_12SHORTexp1120546_rate.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>det_image_seq1_MIRIFULONG_34SHORTexp1120546_rate.fits
-this one will have the level 2b cube built
+               <pre><span></span>det_image_seq2_MIRIFUSHORT_12MEDIUMexp1123047_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>det_image_seq1_MIRIFUSHORT_12MEDIUMexp1123047_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>det_image_seq3_MIRIFUSHORT_12SHORTexp1120546_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>det_image_seq3_MIRIFUSHORT_12MEDIUMexp1123047_rate.fits
 </pre>
               </div>
              </div>
@@ -1232,31 +1229,14 @@ this one will have the level 2b cube built
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>det_image_seq3_MIRIFULONG_34LONGexp1125354_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
                <pre><span></span>det_image_seq2_MIRIFULONG_34MEDIUMexp1123047_rate.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
-               <pre><span></span>det_image_seq4_MIRIFULONG_34LONGexp1125354_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>det_image_seq4_MIRIFULONG_34SHORTexp1120546_rate.fits
-</pre>
-              </div>
-             </div>
-             <div class="output stream highlight-myst-ansi notranslate">
-              <div class="highlight">
-               <pre><span></span>det_image_seq2_MIRIFULONG_34SHORTexp1120546_rate.fits
+               <pre><span></span>det_image_seq1_MIRIFULONG_34SHORTexp1120546_rate.fits
+this one will have the level 2b cube built
 </pre>
               </div>
              </div>
@@ -1268,13 +1248,43 @@ this one will have the level 2b cube built
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
+               <pre><span></span>det_image_seq3_MIRIFULONG_34LONGexp1125354_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>det_image_seq4_MIRIFULONG_34SHORTexp1120546_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
                <pre><span></span>det_image_seq4_MIRIFULONG_34MEDIUMexp1123047_rate.fits
 </pre>
               </div>
              </div>
              <div class="output stream highlight-myst-ansi notranslate">
               <div class="highlight">
+               <pre><span></span>det_image_seq4_MIRIFULONG_34LONGexp1125354_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>det_image_seq1_MIRIFULONG_34LONGexp1125354_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
                <pre><span></span>det_image_seq2_MIRIFULONG_34LONGexp1125354_rate.fits
+</pre>
+              </div>
+             </div>
+             <div class="output stream highlight-myst-ansi notranslate">
+              <div class="highlight">
+               <pre><span></span>det_image_seq2_MIRIFULONG_34SHORTexp1120546_rate.fits
 </pre>
               </div>
              </div>
@@ -1439,52 +1449,14 @@ peak pixel y =
              <div class="cell_output docutils container">
               <div class="output stream highlight-myst-ansi notranslate">
                <div class="highlight">
-                <pre><span></span>det_image_seq2_MIRIFULONG_34LONGexp1125354_cal_fix.fits
+                <pre><span></span>det_image_seq1_MIRIFULONG_34LONGexp1125354_cal_fix.fits
 </pre>
                </div>
               </div>
               <div class="output stream highlight-myst-ansi notranslate">
                <div class="highlight">
-                <pre><span></span>det_image_seq2_MIRIFULONG_34MEDIUMexp1123047_cal_fix.fits
-det_image_seq3_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq3_MIRIFUSHORT_12MEDIUMexp1123047_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq4_MIRIFULONG_34MEDIUMexp1123047_cal_fix.fits
-det_image_seq4_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq4_MIRIFUSHORT_12LONGexp1125354_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq1_MIRIFUSHORT_12MEDIUMexp1123047_cal_fix.fits
-det_image_seq1_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq1_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq3_MIRIFUSHORT_12LONGexp1125354_cal_fix.fits
+                <pre><span></span>det_image_seq4_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
+det_image_seq1_MIRIFUSHORT_12LONGexp1125354_cal_fix.fits
 </pre>
                </div>
               </div>
@@ -1496,56 +1468,39 @@ det_image_seq1_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
               </div>
               <div class="output stream highlight-myst-ansi notranslate">
                <div class="highlight">
-                <pre><span></span>det_image_seq2_MIRIFUSHORT_12MEDIUMexp1123047_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq1_MIRIFULONG_34LONGexp1125354_cal_fix.fits
-det_image_seq4_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq3_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq4_MIRIFULONG_34LONGexp1125354_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq4_MIRIFUSHORT_12MEDIUMexp1123047_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq1_MIRIFUSHORT_12LONGexp1125354_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq2_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
-</pre>
-               </div>
-              </div>
-              <div class="output stream highlight-myst-ansi notranslate">
-               <div class="highlight">
-                <pre><span></span>det_image_seq2_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
+                <pre><span></span>det_image_seq4_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
 </pre>
                </div>
               </div>
               <div class="output stream highlight-myst-ansi notranslate">
                <div class="highlight">
                 <pre><span></span>det_image_seq1_MIRIFULONG_34MEDIUMexp1123047_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq3_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq2_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
+det_image_seq3_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq1_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq3_MIRIFUSHORT_12MEDIUMexp1123047_cal_fix.fits
+det_image_seq1_MIRIFUSHORT_12MEDIUMexp1123047_cal_fix.fits
 </pre>
                </div>
               </div>
@@ -1558,6 +1513,51 @@ det_image_seq4_MIRIFULONG_34SHORTexp1120546_cal_fix.fits
               <div class="output stream highlight-myst-ansi notranslate">
                <div class="highlight">
                 <pre><span></span>det_image_seq3_MIRIFULONG_34MEDIUMexp1123047_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq2_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq3_MIRIFUSHORT_12LONGexp1125354_cal_fix.fits
+det_image_seq1_MIRIFUSHORT_12SHORTexp1120546_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq4_MIRIFUSHORT_12LONGexp1125354_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq2_MIRIFULONG_34MEDIUMexp1123047_cal_fix.fits
+det_image_seq4_MIRIFULONG_34LONGexp1125354_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq4_MIRIFULONG_34MEDIUMexp1123047_cal_fix.fits
+det_image_seq2_MIRIFULONG_34LONGexp1125354_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq4_MIRIFUSHORT_12MEDIUMexp1123047_cal_fix.fits
+</pre>
+               </div>
+              </div>
+              <div class="output stream highlight-myst-ansi notranslate">
+               <div class="highlight">
+                <pre><span></span>det_image_seq2_MIRIFUSHORT_12MEDIUMexp1123047_cal_fix.fits
 </pre>
                </div>
               </div>
